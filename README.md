@@ -1,1 +1,1 @@
-maven_vsc/src/main/java/maven_vsc
+https://github.com/jmvco/programacion_java/tree/main/maven_vsc/src/main/java/maven_vsc
