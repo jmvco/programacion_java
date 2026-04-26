@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 public class App
 {
-    public static void main( String[] objetoArgs )
+    public static void main( String[] objetoArgs ) throws IOException
     {
         App objetoApp = new App();
         objetoApp.mostrarArgumentoCero();
