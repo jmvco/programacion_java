@@ -5,12 +5,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class MariaDBApp {
+public class Sql03 {
 
     private final String nombreBaseDatos;
     private Connection conexion;
 
-    public MariaDBApp(String nombreBaseDatos) throws SQLException {
+    public Sql03(String nombreBaseDatos) throws SQLException {
         this.nombreBaseDatos = nombreBaseDatos;
         Path rutaBaseDatos = Path.of("C:\\courses\\java_vsc\\maven_vsc\\src\\main\\java\\maven_vsc", this.nombreBaseDatos + ".db");
         String url = "jdbc:sqlite:" + rutaBaseDatos;
@@ -51,10 +51,10 @@ public class MariaDBApp {
     }
 
     public static void main(String[] args) {
-        MariaDBApp
+        Sql03
      app = null;
         try {
-            app = new MariaDBApp
+            app = new Sql03
         ("mi_basededaticos");
             app.conexion.setAutoCommit(false);
             app.crearTabla();
