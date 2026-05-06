@@ -21,6 +21,7 @@ public class GestionRelacionalApp {
     this.datosConexionConfigurados = false;
   }
 
+
   public static void main(String[] args) throws SQLException {
     GestionRelacionalApp aplicacion = null;
     boolean cambiosConfirmados = false;
@@ -30,7 +31,6 @@ public class GestionRelacionalApp {
     System.out.println("Datos conexion configurados: " + aplicacion.datosConexionConfigurados);
     aplicacion.conectar();
     System.out.println("Conexion correcta");
-
   }
 
   public void configurarDatosConexion() {
