@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class ConstructorSuper {
     public static void main(String[] args) throws InterruptedException, IOException {
-        
+
         Alumno alumno = new Alumno("Arthur", "Java");
         alumno.borrarTerminal();
         System.out.println(alumno.getNombre());
